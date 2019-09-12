@@ -1,6 +1,6 @@
 const path=require('path');
 const HtmlWebpackPlugin=require('html-webpack-plugin');
-const server_port=process.env.PORT||5000;
+const PORT=process.env.PORT||5000;
 
 module.exports={
  entry:'./src/index.js',
@@ -9,9 +9,11 @@ module.exports={
      path:path.resolve(__dirname,"dist")
  },
  devServer:{
+    disableHostCheck:true, 
     contentBase:path.join(__dirname,'dist'),
     compress:true,
-    port:server_port
+    inline:true,
+    port:PORT
 },
  plugins:[new HtmlWebpackPlugin({template:'./src/template.html'})],
  module:{
