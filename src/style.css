@@ -1,0 +1,219 @@
+
+*{margin:0px;
+ padding:0px;
+ box-sizing:border-box;
+}
+
+ body{
+  position:relative;
+}
+
+header{
+  position:fixed;
+  top:0px;
+  max-height:105px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background-color:white;
+  width:100%;
+  padding-right:5%;
+  border-bottom:3px solid gray;
+}
+
+  #header-img{
+  margin:20px 20px 20px 40px;
+  vertical-align:middle;    
+}
+
+#logo-text{
+ font-family: 'Dancing Script', cursive;
+  color:hsl(180, 20%, 40%);
+  text-shadow:1px 2px black;
+}
+ul{
+  list-style-type:none;
+}
+header li{
+  display:inline-block;
+  padding:20px 15px;
+  border-right:1px hsl(0, 100%, 15%) solid;
+font-family: 'Open Sans Condensed', sans-serif;
+  font-size:20px;
+  font-weight:bold;
+}
+header li:hover{
+  background-color:hsla(225, 100%, 80%,0.4);
+  animation-name:expand;
+  animation-duration:1s;
+}
+@keyframes expand {
+  40% {
+    width:200px;
+    background-color:hsla(225, 100%, 80%,0.8);
+  }
+} 
+.nav-link{
+text-decoration:none;
+}
+#title{
+  position:relative;
+  top:90px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight:bold;
+  margin:30px;
+  text-align:left;
+  font-size:25px;
+  height:150px;
+  color:gray;
+}
+@media only screen and (max-width:600px){
+  #title{font-size:15px;}
+  header{flex-wrap:wrap;}
+  }
+
+#title span{
+  color:gray;
+  animation-name:changeColor;
+  animation-duration:5s;
+  animation-iteration-count:infinite;
+}
+@keyframes changeColor{
+  30%{
+    color:hsla(225, 100%, 80%,0.8);
+  }
+  50%{
+    color:brown;
+  }
+}
+
+#container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  height:450px;
+  width:70%;
+  margin-left:15%;
+  margin-top:100px;
+}
+
+
+#container >#item{
+  background-color:gray;
+  width:30%;
+  height:80%;
+}
+
+#item:hover{
+  animation-name:showdetail;
+  animation-duration:5s;
+}
+
+@keyframes showdetail{
+  50%{
+    background-color:white;
+  }
+}
+
+#container >#price-tag{
+  border-radius:0px 15px;
+  width:12%;
+  height:10%;
+  background-color:rgb(255, 153, 102);
+  text-align:center;
+  font-size:25px;
+  font-weight:bold;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#price-tag:hover{
+ color:white;
+}
+
+.purse-image{
+  display:block;
+  width:80%;
+  height:92%;
+  margin:4% auto 4% auto
+}
+
+#features{
+  font-family:'Open Sans Condensed', sans-serif;
+  display:flex;
+  flex-direction:column;
+  margin-top:75px;
+}
+#features >h2{
+  text-align:right;
+}
+
+.zmdi{
+  margin:15px;
+  color:brown;
+}
+
+.feature-info{
+  font-size:20px;
+  font-weight:bold;
+  margin:20px auto auto 20%;
+  color:gray;
+}
+.container-process,.container-contactus{
+  display:flex;
+  width:100%;
+  height:500px;
+  background-color:hsl(180, 20%, 80%);
+  margin-top:75px;
+  text-transform:uppercase;
+}
+
+.process-title{
+  width:50%;
+  height:500px;
+  font-size:50px;
+  text-align:center;   
+  background-color:hsl(180, 20%, 45%);
+  color:white;
+ font-family:'Open Sans Condensed', sans-serif;
+  line-height:500px;/** use the line-height to center the text in the middle of the square, the lenght is equal the height of the container**/
+}
+#video{
+  width:100%;
+  height:100%;
+}
+.video-container{
+  width:50%;
+}
+
+.contact-title{
+  width:50%;
+  font-size:50px;
+  text-align:center;   
+  background-color:gray;
+  color:white;
+  padding-top:10%;
+  font-family:'Open Sans Condensed', sans-serif;
+}
+
+#form-image{
+  width:50%;
+  background-image:url("https://i.pinimg.com/736x/fc/43/dc/fc43dcd47ed30839f9a7c8d1b4595767.jpg");
+}
+
+#form{
+  font-size:20px;
+  color:black;
+}
+#form input{
+  padding:15px;
+  margin:20px;
+}
+
+footer li{
+display:inline-bloack;
+  color:gray;
+  font-size:20px;
+  font-family:'Open Sans Condensed', sans-serif;
+  float:right;
+  padding:20px;
+}
