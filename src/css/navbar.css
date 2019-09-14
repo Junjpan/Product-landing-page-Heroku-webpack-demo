@@ -1,0 +1,6 @@
+#nav-bar{ background-color:rgb(184, 180, 180);
+          box-shadow:2px 5px 3px black;
+        }
+#nav-bar>li{
+    margin:2px 5px
+}        
