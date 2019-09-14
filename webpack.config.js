@@ -5,7 +5,7 @@ const OptimizeCssAssetsPlugin=require('optimize-css-assets-webpack-plugin');
 const TersePlugin=require('terser-webpack-plugin');
 const {CleanWebpackPlugin}=require('clean-webpack-plugin');
 var server_port = process.env.PORT || 5000;
-var server_host = "localhost"||'0.0.0.0';
+var server_host = '0.0.0.0';
 
 
 module.exports={
